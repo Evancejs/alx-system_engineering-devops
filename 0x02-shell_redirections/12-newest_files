@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt --time-style=+%s | awk '{print $9}' | tail -n +2 | head -n 10
