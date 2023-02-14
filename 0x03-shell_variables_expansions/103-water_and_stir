@@ -1,0 +1,2 @@
+#!/bin/bash
+printf '%d\n' "$(( $(printf "%d" "0$WATER") + $(printf "%d" "0$STIR") ))" | bc -l | xargs printf "%.0f\n" | awk '{ printf "%x\n", $0 }'
